@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOS.QRCodeRecipe", "iOS.QRCodeRecipe\iOS.QRCodeRecipe.csproj", "{E73485A3-7E90-42FC-ABCC-8474FBE389D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Release|iPhone.Build.0 = Release|iPhone
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E73485A3-7E90-42FC-ABCC-8474FBE389D8}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = iOS.QRCodeRecipe\iOS.QRCodeRecipe.csproj
+	EndGlobalSection
+EndGlobal

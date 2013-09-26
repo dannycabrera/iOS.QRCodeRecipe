@@ -1,0 +1,3 @@
+/Users/dannyc/Projects/GitHub/iOS.QRCodeRecipe/iOS.QRCodeRecipe/obj/iPhone/Debug/mtouch-cache/Link/monotouch.dll
+/Users/dannyc/Projects/GitHub/iOS.QRCodeRecipe/iOS.QRCodeRecipe/obj/iPhone/Debug/mtouch-cache/Link/iOSQRCodeRecipe.exe
+/Users/dannyc/Projects/GitHub/iOS.QRCodeRecipe/iOS.QRCodeRecipe/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
