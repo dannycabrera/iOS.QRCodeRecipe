@@ -28,28 +28,27 @@
         </ul>
       </header>
       <section>
-        <h2>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
-
-<ol>
-<li>iOS 7</li>
-</ol><h2>
-<a name="instructions" class="anchor" href="#instructions"><span class="octicon octicon-link"></span></a>Instructions</h2>
-
-<ol>
-<li>Optional - Enter message to be encoded as a QR code.</li>
-<li>Tap "Generate QR code".</li>
-</ol><h2>
-<a name="tutorial" class="anchor" href="#tutorial"><span class="octicon octicon-link"></span></a>Tutorial</h2>
-
-<p><a href="http://dannycabrera.github.io/iOS.QRCodeRecipe/">http://dannycabrera.github.io/iOS.QRCodeRecipe/</a></p>
+        <p>This is a sample recipe for the <a href="http://blog.xamarin.com/xamarin-recipe-cook-off/">Xamarin Recipe Cook-Off</a>. This sample shows how to generate a QR code and display inside a UIImageView control.</p>
 
 <h2>
 <a name="screenshot" class="anchor" href="#screenshot"><span class="octicon octicon-link"></span></a>Screenshot</h2>
 
-<p><img src="Screenshot/QRCodeScreenshot.png" alt="Combined"></p>
+<p><img src="https://raw.github.com/dannycabrera/iOS.QRCodeRecipe/master/Screenshot/QRCodeScreenshot.png" alt="QRCodeScreenshot"></p>
 
-<p>Apple Documentation:<br><a href="https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/filter/ci/CIQRCodeGenerator">https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/filter/ci/CIQRCodeGenerator</a></p>
+<h2>
+<a name="code" class="anchor" href="#code"><span class="octicon octicon-link"></span></a>Code</h2>
+
+<p>The process to generate a QR code is relatively easy. All that is required is the message you want to encode and setting the error correction level. If you need a bit more information on the error correction levels check the <a href="http://en.wikipedia.org/wiki/QR_Code#Error_correction">QR code wiki page</a>.</p>
+
+<ol>
+<li>Generate the QR code
+<code>
+var qrGen = new CIQRCodeGenerator ();
+qrGen.Message = NSData.FromString (textField.Text);
+qrGen.CorrectionLevel = CorrectionLevel.M.ToString();
+</code>
+</li>
+</ol><p>Apple Documentation:<br><a href="https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/filter/ci/CIQRCodeGenerator">https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/filter/ci/CIQRCodeGenerator</a></p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/dannycabrera">dannycabrera</a></p>
