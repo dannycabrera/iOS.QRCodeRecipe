@@ -41,14 +41,22 @@
 <p>The process to generate a QR code is relatively easy. All that is required is the message you want to encode and setting the error correction level. If you need a bit more information on the error correction levels check the <a href="http://en.wikipedia.org/wiki/QR_Code#Error_correction">QR code wiki page</a>.</p>
 
 <ol>
-<li>Generate the QR code
-<code>
-var qrGen = new CIQRCodeGenerator ();
+<li>
+<p>Generate the QR code:</p>
+
+<pre><code>var qrGen = new CIQRCodeGenerator ();
 qrGen.Message = NSData.FromString (textField.Text);
 qrGen.CorrectionLevel = CorrectionLevel.M.ToString();
-</code>
+</code></pre>
 </li>
-</ol><p>Apple Documentation:<br><a href="https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/filter/ci/CIQRCodeGenerator">https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/filter/ci/CIQRCodeGenerator</a></p>
+<li>
+<p>Render the image:</p>
+
+<pre><code>var context = CIContext.FromOptions(null);
+var img = UIImage.FromImage (context.CreateCGImage (qrGen.OutputImage, qrGen.OutputImage.Extent));
+</code></pre>
+</li>
+</ol><p>Apple's Documentation:<br><a href="https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/filter/ci/CIQRCodeGenerator">https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/Reference/reference.html#//apple_ref/doc/filter/ci/CIQRCodeGenerator</a></p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/dannycabrera">dannycabrera</a></p>
