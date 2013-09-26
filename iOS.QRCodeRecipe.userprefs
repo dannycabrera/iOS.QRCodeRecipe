@@ -1,0 +1,12 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.7.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS.QRCodeRecipe/iOS_QRCodeRecipeViewController.cs">
+    <Files>
+      <File FileName="iOS.QRCodeRecipe/iOS_QRCodeRecipeViewController.cs" Line="32" Column="48" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
